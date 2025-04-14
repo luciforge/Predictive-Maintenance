@@ -1,0 +1,9 @@
+2025-04-08 18:34:59,132 - INFO - Loaded raw data from CMAPSSData\train_FD003.txt with shape: (24720, 26)
+2025-04-08 18:34:59,133 - INFO - Renamed selected sensors and operational settings.
+2025-04-08 18:34:59,138 - INFO - Dropped low-variance sensors: ['chamber_temp_setpoint', 'pressure_mode', 'sensor_1', 'sensor_5', 'sensor_10', 'sensor_16', 'sensor_18', 'sensor_19']
+2025-04-08 18:34:59,144 - INFO - Injected Gaussian noise (\u03c3=0.003) into: ['stage_temp_x', 'spindle_vibration_x', 'spindle_vibration_y', 'coolant_pressure', 'coolant_flow_rate', 'airflow_alignment_error', 'thermal_drift_z']
+2025-04-08 18:34:59,146 - INFO - Applied linear drift to: ['thermal_drift_z']
+2025-04-08 18:34:59,149 - INFO - Rescaled sensor values by 0.001 for: ['stage_temp_x', 'spindle_vibration_x', 'spindle_vibration_y', 'coolant_pressure', 'coolant_flow_rate', 'airflow_alignment_error', 'thermal_drift_z', 'motor_torque', 'power_draw']
+2025-04-08 18:34:59,466 - INFO - Applied per-unit MinMax normalization.
+2025-04-08 18:34:59,467 - INFO - Computed RUL.
+2025-04-08 18:35:00,150 - INFO - \u2705 Saved to CMAPSSData\transformed\transformed_fd003.csv
